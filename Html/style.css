@@ -1,0 +1,19 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.a{
+    color: rgb(218, 209, 209);
+    background-color: rgb(14, 14, 14);
+    text-align: center;
+    /* padding: 20px; */
+    font-family: sans-serif;
+    box-shadow: 2px 2px 8px;
+    /* border-radius: 80px; */
+    text-shadow: 2px 2px 8px rgb(82, 82, 141);
+    font-size: 30px;
+    /* margin: 50px 5px; */
+    padding: 50px 1
+    0px;
+}
