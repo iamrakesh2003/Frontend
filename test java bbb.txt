@@ -1,0 +1,48 @@
+import java.util.*;
+public class Main{
+ public static void main(String[] args) {
+    Scanner sc =new Scanner(System.in);
+    System.out.println("enter number");
+
+        int num= sc.nextInt();
+        if (num>=3 && num<=5) {
+            System.out.println("Summer");
+            
+        }
+        if (num>=9 && num<=11) {
+            System.out.println("autumn");
+            
+        }
+        if(num>=12 && num<=2){
+            System.out.println("winter");
+        }
+       else if(num>13){
+           System.out.println("invalid");
+       }
+ }
+ }
+-----------------------------------------------
+import java.util.*;
+public class Main{
+ public static void main(String[] args) {
+    System.out.println("enter number");
+    Scanner sc =new Scanner(System.in);
+        int num= sc.nextInt();
+        int rem;
+        int temp=num;
+        int sum=0;
+        while(num>0){
+            rem=num%10;
+            sum=sum*10+rem;
+            num=num/10;
+        }
+        if(temp==sum){
+            System.out.println("Palindrome");
+        }
+        else{
+            System.out.println("not Palindrome");
+            
+        }
+
+    }
+ }
