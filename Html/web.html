@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            height: 60px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            z-index: 99;
+            background-color: white;
+
+            .logo {
+                height: 5px;
+                width: 10px;
+            }
+
+        }
+
+        ul {
+            display: flex;
+            /* margin-right: 20px; */
+
+        }
+
+        ul li {
+
+            margin: 0px 20px;
+            list-style: none;
+        }
+        .image{
+            width:100%;
+            /* height: 100%; */
+            position: relative;
+            display: flex;
+            /* margin-bottom: 500px; */
+        }
+
+        .image img{
+
+            width: 100%;
+   
+        }
+        .image h1{
+            position: absolute;
+            top: 100px;
+            font-size: 70px;
+            font-family: sans-serif;
+            color: white;
+            left: 60px;
+        }
+        .image p{
+            position: absolute;
+            font-family: sans-serif;
+            color: white;
+            font-size: 20px;
+            top: 270px;
+            left: 60px;
+        }
+
+        .image button{
+            position: absolute;
+            font-family: sans-serif;
+            color: rgb(96, 88, 88);
+            top: 400px;
+            left: 60px;
+            padding: 20px;
+            width: 22%;
+            font-size: 20px;
+
+        }
+        .key{
+            height: 550px;
+            /* border: 2px solid red; */
+            width: 100%;
+            /* background-color: red; */
+            /* display: flex; */
+            font-family: sans-serif;
+            
+            position: relative;
+        
+             .key1{
+                position: absolute;
+                height: 50%;
+                width: 100%;
+                bottom: 0;
+                /* border: 2px solid green; */
+                display: flex;
+                justify-content: space-evenly;
+
+                
+             }
+             .key1 i{
+                font-size: 50px;
+             }
+            .key-item{
+                height:100%;
+                width: 20%;
+                /* border: 2px solid red; */
+                /* position: absolute; */
+                justify-content: space-between;
+                bottom: 5%;
+                
+              
+                
+               
+               
+
+            }
+        }
+
+        .key h1,.key-p{
+
+            text-align: center;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+        .key-item{
+            text-align: center;
+            line-height: 30px;
+            padding: 15px;
+        }
+
+        .design{
+            height: 700px;
+            background-color: gray;
+            /* border: 2px solid red; */
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        
+
+        }
+        .design-item{
+            width: 45%;
+            height: 50%;
+            /* border: 2px solid greenyellow; */
+      
+        }
+
+        .team{
+            height: 1000px;
+            /* border: 2px solid red; */
+            /* background-color: violet; */
+            position: relative;
+        }
+        .team h3,.team-p{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 50px;
+        }
+   
+        
+            .team-main{
+                position: absolute;
+                height: 50%;
+                width: 100%;
+                bottom: 0;
+                /* border: 2px solid green; */
+                display: flex;
+                justify-content: space-evenly;
+                
+
+          
+             }
+        
+        .team-item{
+                height:100%;
+                width: 22%;
+                /* border: 2px solid red; */
+                /* position: absolute; */
+                justify-content: space-between;
+                bottom: 5%;
+                
+        }
+        .p0{
+            font-size: 20px;
+            margin: 10px;
+            color: gray;
+        }
+        .p1{
+            font-size: 20px;
+            margin: 10px;
+            font-style: italic;
+            /* color: gray; */
+        }
+        .employee{
+
+            height: 4
+            0vh;
+            background-color: gray;
+            display: flex;
+            justify-content: space-around;
+      
+            font-size: 50px;
+            
+
+            
+           
+           
+        }
+         .emoloyee-count{
+                /* border: 3px solid red; */
+                /* height: 100%; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 24%;
+                background-color:gray;
+                font-style:oblique;
+                height: 200px;
+            }
+
+            .work{
+                height: 150vh;
+                /* background-color: red; */
+                position: relative;
+            }
+            .work-item{
+                height: 30vh;
+                /* background-color: black; */
+                /* color: white; */
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center; */
+                align-items: center;
+                line-height: 2;
+                letter-spacing: 5px;
+                font-size: 30px;
+                /* margin-top: 5px; */
+                /* border: 4px solid blue; */
+                
+            }
+            .work-item1{
+                height: 100vh;
+                /* border: 2px solid black; */
+                /* position: relative; */
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+            }
+            .pic{
+                height:35%;
+                width: 24%;
+                /* border: 2px solid blue; */
+               img{
+                height: 100%;
+                width: 100%;
+               }
+            }
+            .skill{
+                /* height: 7
+                0vh; */
+                /* border: 3px solid black; */
+                display: flex;
+                /* position: relative; */
+                /* text-align: center; */
+                /* justify-content: center; */
+                align-items: center;
+                justify-content: space-around;
+
+            }
+            .skill-item1{
+                height: 60vh;
+                width: 50%;
+                /* border: 2px solid black; */
+                /* position: absolute; */
+                right: 0;
+                
+                h1{
+                    margin-top: 30px;
+                    margin-left: 15px;
+
+                }
+                p{
+                    margin-top: 30px;
+                    margin-left: 15px;
+                    font-size: 25px;
+                }
+            }
+            .skill-item{
+                height: 60vh;
+                width: 50%;
+                /* border: 2px solid black; */
+                /* position: absolute; */
+                /* right: 0; */
+                justify-content: center;
+                align-items: center;
+                display: flex;
+               
+            }
+
+            .main{
+                height: 80%;
+                /* border: 2px solid red; */
+                width: 100%;
+                margin: auto;
+                padding-top: 5px;
+            }
+            .cover{
+                height: 30%;
+                /* background-color:  yellow; */
+            }
+            .cover p{
+                font-size: 25px;
+            }
+                .camera{
+                    height: 6vh;
+                    width: 90%;
+                    /* border: 2px solid black; */
+                    background-color: rgb(247, 240, 240);
+                    /* border-radius: 20px; */
+                    text-align: center;
+                    margin-top: 5px;
+                    
+
+                }
+                .camera1{
+                    height: 5.7vh;
+                    width: 90%;
+                    /* border: 2px solid black; */
+                    background-color:gray;
+                    /* border-radius: 20px; */
+
+
+
+                }
+                .plan{
+                    height: 170vh;
+                    background-color: gray;
+                    /* display: flex; */
+                    /* justify-content: center; */
+                    /* align-items: center; */
+                }
+                .plan-main{
+                    height: 40vh;
+                    /* border: 2px solid yellow; */
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    color: white;
+                    font-size: 20px;
+                    p{
+                        margin-top: 20px;
+                    }
+                }
+                .plan-item{
+                    height: 120vh;
+                    width: 30%;
+                    /* border: 2px solid black; */
+                    /* background-color: antiquewhite; */
+                    /* display: flex; */
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px;
+                   
+
+                }
+                .basic{
+                    background-color: black;
+                    height: 100px;
+                    color: white;
+                    align-items: center;
+                    text-align: center;
+                    padding-top: 30px;
+                        
+                    }
+                    .title{
+                        height: 60px;
+                        background-color: antiquewhite;
+                        margin-top: 20px;
+                        width: 100%;
+                        text-align: center;
+                        padding-top: 19px;
+                    }
+                .plan-cover{
+                    height: 125vh;
+                    /* border: 2px solid red; */
+                    display: flex;
+                    /* align-items: center; */
+                    justify-content: center;
+
+                }
+                
+                .dollar{
+                    height: 170px;
+                    background-color:antiquewhite;
+                    margin-top: 20px;
+                    text-align: center;
+                    padding-top: 40px;
+
+                }
+
+                .sign{
+                    height: 110px;
+                    background-color:antiquewhite;
+                    margin-top: 20px;
+                    text-align: center;
+                    padding-top: 40px;
+
+                }
+
+                .btn{
+                    font-size: 35px;
+                    background-color: black;
+                    color: white;
+                }
+            
+      
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <ul>
+                <li>LOGO</li>
+            </ul>
+        </div>
+        <div class="about">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-eject"></i>
+                    <span>ABOUT</span></li>
+                <li>
+                    <i class="fa-solid fa-people-group"></i>
+                    <span>TEAM</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-list-check"></i>
+
+                    <span>WORK</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <span>PRICING</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>CONTACT</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="https://www.w3schools.com/w3images/mac.jpg" alt="">
+
+        <h1>Start Something that matters</h1>
+        <p>Stop wasting valuable time with projects that just isn't you.</p>
+        <button>Learn more and start today</button>
+    </div>
+    <div class="key">
+        <h1>ABOUT THE COMPANY</h1>
+        <p class="key-p">Key features of our company</p>
+        <div class="key1">
+            <div class="key-item">
+                <span><i class="fa-solid fa-desktop"></i></span>
+
+                <h2>Responsive</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="key-item">
+                <span><i class="fa-solid fa-heart-pulse"></i></span>
+                <h2>Passion</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="key-item">
+                <span><i class="fa-solid fa-gem"></i></span>
+                <h2>Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            </div>
+            <div class="key-item">
+                <span><i class="fa-solid fa-gears"></i></span>
+                <h2>Support</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quis dicta accusantium velit reiciendis.</p>
+            </div>
+        </div>
+      
+    </div>
+
+    <div class="design">
+        <div class="design-item">
+            <h2 style="font-size: 50px; margin-left: 20px; margin-top: 20px;">view know design.</h2>
+            <p style="font-size: 20px; margin-left: 20px; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore</p>
+                <button style="height: 40px; width: 170px;margin-left: 20px; margin-top: 20px; ">
+                    <span><i class="fa-solid fa-laptop-file" style="font-size: 20px; margin: 0px 9px;"></i></span >View your work</button>
+        </div>
+        <div class="design-item">
+            <img src="https://www.w3schools.com/w3images/phone_buildings.jpg" alt="" style="height: 100%;width: 100%;">
+        </div>
+    </div>
+    <div class="team">
+        <h3>THE TEAM</h3>
+        <p class="team-p">The ones who runs this company
+
+        </p>
+        <div class="team-main">
+        <div class="team-item">
+            <div class="team1">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" style="width: 100%;height: 40%; ">
+                <h4 style="font-size: 30px; padding-left: 8px;margin: 10px;">John Doe</h4>
+                <p class="p0">CEO & Founder</p>
+                <p class="p1">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button style="height: 40px; width: 80%;margin-left: 20px; margin-top: 20px; ">
+                <span><i  class="fa-regular fa-id-card" style="font-size: 20px; margin: 0px 9px;"></i></span >CONTACT</button>
+            </div>
+            <div class="team1"></div>
+        </div>
+        <div class="team-item">
+            <img src="https://www.w3schools.com/w3images/team1.jpg  " alt="" style="width: 100%; height: 41%; ">
+            <h4 style="font-size: 30px; padding-left: 8px;margin: 10px;">Anja Doe</h4>
+            <p class="p0">Art Director</p>
+            <p class="p1">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button style="height: 40px; width: 80%;margin-left: 20px; margin-top: 20px; ">
+            <span><i  class="fa-regular fa-id-card" style="font-size: 20px; margin: 0px 9px;"></i></span >CONTACT</button>
+        </div>
+        <div class="team-item">
+            <img src="https://www.w3schools.com/w3images/team3.jpg " alt="" style="width: 100%; height: 41%; ">
+            <h4 style="font-size: 30px; padding-left: 8px;margin: 10px;">Mike Ross</h4>
+            <p class="p0">Web Designer</p>
+            <p class="p1">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button style="height: 40px; width: 80%;margin-left: 20px; margin-top: 20px; ">
+            <span><i  class="fa-regular fa-id-card" style="font-size: 20px; margin: 0px 9px;"></i></span >CONTACT</button>
+            
+        </div>
+        <div class="team-item">
+            <img src="https://www.w3schools.com/w3images/team4.jpg" alt="" style="width: 100%; height: 41%; ">
+            <h4 style="font-size: 30px; padding-left: 8px;margin: 10px;">Dan Star</h4>
+            <p class="p0">Designer</p>
+            <p class="p1">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <button style="height: 40px; width: 80%;margin-left: 20px; margin-top: 20px; ">
+            <span><i  class="fa-regular fa-id-card" style="font-size: 20px; margin: 0px 9px;"></i></span >CONTACT</button>
+        </div>
+    </div>
+    </div>
+    <div class="employee">
+        <div class="emoloyee-count"> <h4>14+</h4>
+            <p style="font-size: 25px;">Partners</p>
+        </div>
+        <div class="emoloyee-count"><h4>55+</h4>
+            <p style="font-size: 25px;">Projects Done</p></div>
+        <div class="emoloyee-count"><h4>89+</h4>
+            <p style="font-size: 25px;">Happy Clients</p></div>
+        <div class="emoloyee-count"><h4>150+</h4>
+            <p style="font-size: 25px;">Meetings</p></div>
+    </div>
+    <div class="work">
+        <div class="work-item"></div>
+        <div class="work-item">
+            <h2>OUR WORK</h2>
+            <p>What we've done for people</p>
+        </div>
+        <div class="work-item1">
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_mic.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_phone.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_drone.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_sound.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_tablet.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_camera.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_typewriter.jpg" alt="">
+        </div>
+        <div class="pic">
+            <img src="https://www.w3schools.com/w3images/tech_tableturner.jpg" alt="">
+        </div>
+        </div>
+        
+    </div>
+    <div class="skill">
+        <div class="skill-item1">
+            <h1>Our Skills.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="skill-item">
+            <div class="main">
+                <div class="cover">
+            <p> <span><i class="fa-solid fa-camera"></i>      </span>Photography</p>
+            <div class="camera">
+                <div class="camera1"><h2>90%</h2></div>
+            </div>
+        </div>
+        <div class="cover">
+            <p> <span><i class="fa-solid fa-laptop-code"></i>      </span>Web Design</p>
+            <div class="camera">
+                <div class="camera1" style="width: 85%; ;"><h2>85%</h2></div>
+            </div>
+        </div>
+        <div class="cover">
+            <p> <span><i class="fa-solid fa-image"></i>      </span>Photoshop</p>
+            <div class="camera">
+                <div class="camera1" style="width: 75%;"><h2>75%</h2></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="plan">
+        <div class="plan-main">
+            <h1>PRICING</h1>
+            <p>Choose a pricing plan that fits your needs.</p>
+        </div>
+       <div class="plan-cover">
+        <div class="plan-item">
+            <div class="basic">
+                <h1>Basic</h1>
+            </div>
+            <div class="title">
+                <h3>10GB Storage</h3>
+            </div>
+            <div class="title">
+                <h3>10 Emails</h3>
+            </div>
+            <div class="title">
+                <h3>10 Domains</h3>
+            </div>
+            <div class="title">
+                <h3>Endless Support</h3>
+            </div>
+            <div class="dollar">
+                <h1>$ 10</h1>
+                <p>per month</p>
+            </div>
+            <div class="sign">
+                <button class="btn">Sign Up</button>
+            </div>
+
+        </div>
+        <div class="plan-item">
+            <div class="basic" style="background-color: red; margin-top: 40px;">
+                <h1>Pro</h1>
+            </div>
+            <div class="title">
+                <h3>25GB Storage</h3>
+            </div>
+            <div class="title">
+                <h3>25 Emails</h3>
+            </div>
+            <div class="title">
+                <h3>25 Domains</h3>
+            </div>
+            <div class="title">
+                <h3>Endless Support</h3>
+            </div>
+            <div class="dollar">
+                <h1>$ 25</h1>
+                <p>per month</p>
+            </div>
+            <div class="sign">
+                <button class="btn">Sign Up</button>
+            </div>
+
+
+        </div>
+        <div class="plan-item">
+            <div class="basic">
+                <h1>Premium</h1>
+            </div>
+            <div class="title">
+                <h3>50GB Storage</h3>
+            </div>
+            <div class="title">
+                <h3>50 Emails</h3>
+            </div>
+            <div class="title">
+                <h3>50 Domains</h3>
+            </div>
+            <div class="title">
+                <h3>Endless Support</h3>
+            </div>
+            <div class="dollar">
+                <h1>$ 50</h1>
+                <p>per month</p>
+            </div>
+            <div class="sign">
+                <button class="btn">Sign Up</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    
+
+</body>
+
+</html>

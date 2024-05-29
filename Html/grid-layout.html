@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .continer{
+            height: 100vh;
+            background-color: white;
+            display: grid;
+            grid-template-rows: 1fr 5fr;
+            grid-gap: 10px;
+        }
+        .upper{
+           background-color: yellow;
+           border-radius: 15px;
+          
+        }
+        .lower{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            grid-gap: 10px;
+            border-radius: 15px;
+
+        }
+        .left{
+            background-color: rgb(245, 245, 237);
+            display: grid;
+            grid-template-rows: 2fr 4fr;
+            grid-gap: 10px;
+            
+
+
+        }
+        .left-up{
+            background-color: red;
+            border-radius: 15px;
+            
+        }
+        .left-down{
+            background-color: yellow;
+            border-radius: 15px;
+            
+        }
+        .right{
+            display: grid;
+            grid-template-rows: 4fr 2fr;
+            background-color: white;
+            grid-gap: 10px;
+
+        }
+        .right-up{
+            background-color: white;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 10px;
+            border-radius: 15px;
+            
+            
+        }
+        .right-down{
+            background-color:yellow;
+            border-radius: 15px;
+        }
+        .up-1{
+            background-color: yellow;
+            border-radius: 15px;
+        }
+        .up-2{
+            background-color:white;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+
+
+        }
+        .item{
+            background-color: red;
+            border-radius: 15px;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="continer">
+    <div class="upper"></div>
+    <div class="lower">
+        <div class="left">
+            <div class="left-up"></div>
+            <div class="left-down"></div>
+        </div>
+        <div class="right">
+            <div class="right-up">
+                <div class="up-1"></div>
+                <div class="up-2">
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+            </div>
+            <div class="right-down"></div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
