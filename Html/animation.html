@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .continer{
+            height: 200px;
+            width: 200px;
+            border: 2px solid yellow;
+            animation-name: box;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: relative;
+            background-color: purple;
+            border-radius: 200px;
+
+        }
+        
+        @keyframes box {
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 400px;
+                top: 0px;
+            }
+            50%{
+                left: 400px;
+                top: 400px;
+            }
+            75%{
+                top: 400px;
+                left: 0px;
+            }
+            100%{
+                left:0px;
+                top:0px;
+
+            }
+            
+            }
+            
+        
+        .item{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            animation-name: item;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: absolute;
+            border-radius: 200px;
+            background-color: red;
+            animation-direction: reverse;
+        
+
+        }
+        @keyframes item {
+            0%{
+                right: 0px;
+                top: 0px;
+            }
+            25%{
+                right: 400px;
+                top: 0px;
+            }
+            50%{
+                right: 400px;
+                top: 400px;
+            }
+            75%{
+                top: 400px;
+                right: 0px;
+            }
+            100%{
+                right:0px;
+                top:0px;
+
+            } }
+    </style>
+</head>
+<body>
+    <div class="continer"></div>
+    <div class="item"></div>
+    
+</body>
+</html>
